@@ -23,9 +23,9 @@ namespace SandAndSandals
         {
             using (SqlConnection connection = new SqlConnection(connString))
             {
-                SqlCommand cmd = new SqlCommand("GetPassword", connection);
+                /*SqlCommand cmd = new SqlCommand("GetPassword", connection);
 
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;*/
 
                 SqlCommand select = new SqlCommand("select * from [User] where UserName=@UserName AND Password=@password", connection);
 
@@ -49,12 +49,12 @@ namespace SandAndSandals
                 }
             }
         }
-        private string hashPassword(string password)
+        /*private string hashPassword(string password)
         {
             SHA1CryptoServiceProvider sha1 = new SHA1CryptoServiceProvider();
             byte[] password_bytes = Encoding.ASCII.GetBytes(password);
             byte[] encrypted_bytes = sha1.ComputeHash(password_bytes);
             return Convert.ToBase64String(encrypted_bytes);
-        }
+        }*/
     }
 }

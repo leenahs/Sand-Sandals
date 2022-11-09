@@ -40,7 +40,8 @@ namespace SandAndSandals
 
                     InsertUser.Parameters.AddWithValue("@UserName", HttpUtility.HtmlEncode(usernameinput.Value));
                     InsertUser.Parameters.AddWithValue("@Email", HttpUtility.HtmlEncode(emailinput.Value));
-                    InsertUser.Parameters.AddWithValue("@password", HttpUtility.HtmlEncode(hashPassword(passinput.Value)));
+                    /*InsertUser.Parameters.AddWithValue("@password", HttpUtility.HtmlEncode(hashPassword(passinput.Value)));*/
+                    InsertUser.Parameters.AddWithValue("@password", HttpUtility.HtmlEncode(passinput.Value));
 
                     int state = InsertUser.ExecuteNonQuery();
                     connection.Close();
@@ -52,12 +53,12 @@ namespace SandAndSandals
                 }
             }
         }
-        private string hashPassword(string password)
+        /*private string hashPassword(string password)
         {
             SHA1CryptoServiceProvider sha1 = new SHA1CryptoServiceProvider();
             byte[] password_bytes = Encoding.ASCII.GetBytes(password);
             byte[] encrypted_bytes = sha1.ComputeHash(password_bytes);
             return Convert.ToBase64String(encrypted_bytes);
-        }
+        }*/
     }
 }
