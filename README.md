@@ -1,2 +1,1 @@
-# Sand and Sandals
- An E-Commerce group project.
+SandSandalsWIP2

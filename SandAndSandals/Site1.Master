@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SandAndSandals.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="Images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/SiteMaster.css">
+    <link rel="stylesheet" type="text/css" href="css/Navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/Footer.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg" style="background-color: #ed843e;">
+          <a class="navbar-brand" href="Home.aspx"><img id="brandLogo" style="width: 100px;" src="Images/logo.png"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+              aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.aspx">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ProductPage.aspx">Products</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.aspx">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CreateAccount.aspx">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cart.aspx"><i class="fa fa-shopping-cart" style="font-size:25px;"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Checkout.aspx">Checkout</a>
+                </li>
+            </ul>
+            <asp:Button class="btn float-right" runat="server" ID="LogoutLink" Text="Logout" OnClick="LogOutLink_Click" />
+          </div>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="ProductPage.asp">Shop</a></li>
+              <li><a href="login.aspx">Login</a></li>
+                <li><a href="CreateAccount.aspx">Sign up</a></li>
+            </ul>
+          </div>
+            <div class="col-xs-6 col-md-3">
+            <h6>Contact Us</h6>
+            <ul class="footer-links">
+                <li><a href="mailto:Sand&Sandals@example.com"><i class="fa fa-envelope"></i> sandandsandals@example.com</a></li>
+                <li><a href=""><i class="fa fa-phone"></i> +966 13847235</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright">Copyright &copy; 2022 All Rights Reserved by Sand&Sandals.</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="instagram" href="https://www.instagram.com/sandandsandalsSA"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/sandandsandalsSA/"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</html>

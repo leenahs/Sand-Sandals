@@ -1,0 +1,48 @@
+﻿.site-footer {
+    background-color: #cf577e;
+    padding: 45px 0 220px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    background-size: cover;
+    padding-bottom: 190px;
+    /*height: 100%;*/
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        /*padding-bottom: calc(var(--jumbotron-padding-y) * 2);*/
+    }
+}
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.btn {
+    background-color: darkorange;
+    border: none;
+}
+
+.btn:hover {
+    background-color: indianred;
+}

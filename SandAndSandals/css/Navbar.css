@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.navbar a {
+    font-weight: bolder;
+    color: white;
+}
+
+.navbar a:hover {
+    color: paleturquoise;
+}

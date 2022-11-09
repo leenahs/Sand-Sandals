@@ -1,0 +1,75 @@
+﻿input[type="number"] {
+    font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px
+}
+
+td {
+    height: 20px;
+    text-align: center
+}
+
+.button {
+    background-color: darkorange;
+    color: white;
+    font-size: 20px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+.button:hover {
+    opacity: 12;
+    background-color: white;
+    border: 3px double darkorange;
+    color: darkorange;
+    font-size: 20px;
+}
+
+.gallery-wrap .img-big-wrap asp:Image {
+    height: 450px;
+    width: auto;
+    display: inline-block;
+    cursor: zoom-in;
+}
+
+
+.gallery-wrap .img-small-wrap .item-gallery {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 7px 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gallery-wrap .img-small-wrap {
+    text-align: center;
+}
+
+.gallery-wrap .img-small-wrap {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
+.card{
+    padding: 70px;
+}
+
+.btn{
+    background-color: darkorange;
+    border: none;
+}
+
+.btn:hover {
+    background-color: indianred;
+}
